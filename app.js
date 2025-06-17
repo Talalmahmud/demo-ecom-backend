@@ -16,6 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1/user", userRoute);
 
 // Error handler middleware (must be last)
+// app.post("/hello", (req, res) => {
+//   console.log("test");
+// });
 
 // 404 handler
 app.use((req, res, next) => {
